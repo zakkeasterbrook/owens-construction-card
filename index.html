@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Michael Owens Digital Card</title>
+    <link rel="stylesheet" href="style.css">
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+</head>
+<body>
+    <div class="card">
+        <model-viewer src="mike.glb"
+                      alt="3D model of Michael Owens"
+                      ar
+                      auto-rotate
+                      camera-controls
+                      environment-image="neutral"
+                      shadow-intensity="1"
+                      style="width: 100%; height: 300px; background-color: black; border-radius: 12px; margin-bottom: 15px;">
+        </model-viewer>
+        <div class="info">
+            <h1>Michael Owens</h1>
+            <h2>Owens Construction</h2>
+            <p>Master Builder of Unique Structures.</p>
+            <div class="details">
+                <p>Email: <a href="mailto:mykal372002@yahoo.com">mykal372002@yahoo.com</a></p>
+                <p>Phone: <a href="tel:+13305075195" class="phone-link">+1 (330) 507-5195</a></p>
+                <p>Website: <a href="https://owensroofs.com">owensroofs.com</a></p>
+            </div>
+        </div>
+        <button id="play-voice" class="voice-button">▶ Hear Mike Speak</button>
+        <button class="ar-button" onclick="document.querySelector('model-viewer').activateAR()">📲 AR Mode</button>
+        <div id="caption" class="caption"></div>
+        <!-- Audio files -->
+        <audio id="voice1" src="audio/voice1.mp3"></audio>
+        <audio id="voice2" src="audio/voice2.mp3"></audio>
+        <audio id="voice3" src="audio/voice3.mp3"></audio>
+        <audio id="voice4" src="audio/voice4.mp3"></audio>
+        <audio id="voice5" src="audio/voice5.mp3"></audio>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
