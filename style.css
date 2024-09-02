@@ -3,6 +3,7 @@ body {
     padding: 0;
     font-family: 'Poppins', sans-serif;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -26,17 +27,19 @@ body {
 
 .info h1 {
     margin: 10px 0;
-    font-size: 24px;
-    font-weight: bold;
-    text-transform: uppercase;
+    font-size: 26px;
+    font-weight: 600;
+    text-transform: capitalize; /* Changed from uppercase to capitalize */
     color: #ffffff;
     letter-spacing: 1px;
+    font-family: 'Montserrat', sans-serif; /* Sleek, modern font for a professional look */
 }
 
 .info h2 {
     margin: 5px 0;
     font-size: 18px;
-    color: #aaaaaa;
+    color: #bbbbbb;
+    font-family: 'Roboto', sans-serif; /* Complementary font for subtitles */
 }
 
 .info p {
@@ -44,6 +47,7 @@ body {
     font-size: 14px;
     line-height: 1.6;
     color: #cccccc;
+    font-family: 'Roboto', sans-serif;
 }
 
 .details a {
@@ -66,6 +70,22 @@ body {
 
 .phone-link:hover {
     color: #ff6b7a;
+}
+
+.highlighted-link {
+    color: #ffffff; /* Pre-highlighted white for immediate emphasis */
+    font-weight: bold;
+    text-decoration: none;
+    font-size: 20px; /* Increased font size for emphasis */
+    position: relative;
+    display: inline-block;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Glow effect */
+}
+
+.highlighted-link:hover {
+    color: #ff6b7a;
+    text-shadow: 0 0 12px rgba(255, 75, 92, 0.8); /* Enhanced glow effect on hover */
 }
 
 .voice-button {
@@ -114,6 +134,42 @@ body {
     transform: scale(1.1);
 }
 
+.cta-container {
+    margin-top: 20px;
+    text-align: center;
+    padding: 15px;
+    background: #1f1f1f;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+    width: 90%;
+    max-width: 380px;
+}
+
+.cta-container p {
+    margin: 0;
+    color: #ddd;
+    font-size: 14px;
+}
+
+.cta-button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    background: #ff4b5c;
+    border: none;
+    border-radius: 25px;
+    font-size: 16px;
+    color: #fff;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(255, 75, 92, 0.6);
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #e03a48;
+    box-shadow: 0 8px 20px rgba(255, 75, 92, 0.8);
+    transform: translateY(-2px);
+}
+
 @keyframes pulse {
     0% {
         transform: scale(1);
@@ -131,19 +187,19 @@ body {
 
 .caption {
     position: absolute;
-    bottom: 0; /* Position at the bottom of the 3D container */
+    bottom: 10px; /* Adjust this to be close to the bottom of the 3D container */
     left: 50%;
     transform: translateX(-50%);
     color: #f0f0f0;
     font-size: 16px;
     font-weight: 500;
-    width: 100%; /* Ensure it fits within the 3D container */
+    width: calc(100% - 20px); /* Width adjustment to fit within the 3D container */
     background: rgba(40, 40, 40, 0.85);
     padding: 8px;
-    border-radius: 0 0 12px 12px; /* Rounded bottom corners matching the 3D container */
+    border-radius: 8px; /* Rounded corners to match the style */
     text-align: center;
     line-height: 1.4;
     display: none;
-    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.5);
-    transition: opacity 0.5s ease;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
+    z-index: 10; /* Ensures it appears on top of the 3D content */
 }
