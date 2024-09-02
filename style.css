@@ -7,7 +7,7 @@ body {
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background: linear-gradient(135deg, #1c1c1c, #0d0d0d); /* Dark gradient for a modern backdrop */
+    background: linear-gradient(135deg, #1c1c1c, #0d0d0d);
     overflow: hidden;
 }
 
@@ -18,7 +18,7 @@ body {
     border-radius: 20px;
     overflow: hidden;
     box-shadow: 0 10px 40px rgba(0, 0, 0, 0.7);
-    background: #2b2b2b; /* Dark background for card to highlight content */
+    background: #2b2b2b;
     text-align: center;
     padding: 20px;
     color: #e0e0e0;
@@ -29,17 +29,17 @@ body {
     margin: 10px 0;
     font-size: 26px;
     font-weight: 600;
-    text-transform: capitalize; /* Changed from uppercase to capitalize */
+    text-transform: capitalize;
     color: #ffffff;
     letter-spacing: 1px;
-    font-family: 'Montserrat', sans-serif; /* Sleek, modern font for a professional look */
+    font-family: 'Montserrat', sans-serif;
 }
 
 .info h2 {
     margin: 5px 0;
     font-size: 18px;
     color: #bbbbbb;
-    font-family: 'Roboto', sans-serif; /* Complementary font for subtitles */
+    font-family: 'Roboto', sans-serif;
 }
 
 .info p {
@@ -62,7 +62,7 @@ body {
 }
 
 .phone-link {
-    color: #ff4b5c; /* Highlight phone link with red for visibility */
+    color: #ff4b5c;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease;
@@ -73,25 +73,25 @@ body {
 }
 
 .highlighted-link {
-    color: #ffffff; /* Pre-highlighted white for immediate emphasis */
+    color: #ffffff;
     font-weight: bold;
     text-decoration: none;
-    font-size: 20px; /* Increased font size for emphasis */
+    font-size: 20px;
     position: relative;
     display: inline-block;
     transition: color 0.3s ease, text-shadow 0.3s ease;
-    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5); /* Glow effect */
+    text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
 }
 
 .highlighted-link:hover {
     color: #ff6b7a;
-    text-shadow: 0 0 12px rgba(255, 75, 92, 0.8); /* Enhanced glow effect on hover */
+    text-shadow: 0 0 12px rgba(255, 75, 92, 0.8);
 }
 
 .voice-button {
     margin-top: 20px;
     padding: 14px 28px;
-    background: #ff4b5c; /* Eye-catching red for main action */
+    background: #ff4b5c;
     border: none;
     border-radius: 25px;
     font-size: 18px;
@@ -100,7 +100,7 @@ body {
     box-shadow: 0 8px 20px rgba(255, 75, 92, 0.6);
     transition: all 0.4s ease;
     animation: pulse 2.5s infinite;
-    width: 85%; /* Full width with padding to create nice visual balance */
+    width: 85%;
     max-width: 300px;
     display: block;
     margin-left: auto;
@@ -118,7 +118,7 @@ body {
     top: 10px;
     right: 10px;
     padding: 8px 16px;
-    background: #333; /* Subtle and sleek */
+    background: #333;
     border: none;
     border-radius: 50%;
     font-size: 16px;
@@ -135,29 +135,29 @@ body {
 }
 
 .cta-container {
-    margin-top: 20px;
+    margin-top: 10px;
     text-align: center;
-    padding: 15px;
+    padding: 10px;
     background: #1f1f1f;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
-    width: 90%;
-    max-width: 380px;
+    width: 80%;
+    max-width: 300px;
 }
 
 .cta-container p {
     margin: 0;
     color: #ddd;
-    font-size: 14px;
+    font-size: 12px;
 }
 
 .cta-button {
-    margin-top: 10px;
-    padding: 10px 20px;
+    margin-top: 8px;
+    padding: 8px 16px;
     background: #ff4b5c;
     border: none;
     border-radius: 25px;
-    font-size: 16px;
+    font-size: 14px;
     color: #fff;
     cursor: pointer;
     box-shadow: 0 5px 15px rgba(255, 75, 92, 0.6);
@@ -187,19 +187,19 @@ body {
 
 .caption {
     position: absolute;
-    bottom: 10px; /* Adjust this to be close to the bottom of the 3D container */
+    bottom: 10px;
     left: 50%;
     transform: translateX(-50%);
     color: #f0f0f0;
     font-size: 16px;
     font-weight: 500;
-    width: calc(100% - 20px); /* Width adjustment to fit within the 3D container */
+    width: calc(100% - 20px);
     background: rgba(40, 40, 40, 0.85);
     padding: 8px;
-    border-radius: 8px; /* Rounded corners to match the style */
+    border-radius: 8px;
     text-align: center;
     line-height: 1.4;
     display: none;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.5);
-    z-index: 10; /* Ensures it appears on top of the 3D content */
+    z-index: 10;
 }
