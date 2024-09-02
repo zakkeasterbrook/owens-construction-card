@@ -35,7 +35,8 @@
                       camera-controls
                       environment-image="neutral"
                       shadow-intensity="1"
-                      style="width: 100%; height: 300px; background-color: black; border-radius: 12px; margin-bottom: 15px;">
+                      style="width: 100%; height: 300px; background-color: black; border-radius: 12px; margin-bottom: 15px; position: relative;">
+            <div id="caption" class="caption"></div> <!-- Caption inside the 3D container -->
         </model-viewer>
         <div class="info">
             <h1>Michael Owens</h1>
@@ -44,18 +45,24 @@
             <div class="details">
                 <p>Email: <a href="mailto:mykal372002@yahoo.com">mykal372002@yahoo.com</a></p>
                 <p>Phone: <a href="tel:+13305075195" class="phone-link">+1 (330) 507-5195</a></p>
-                <p>Website: <a href="https://owensroofs.com">owensroofs.com</a></p>
+                <p>Website: <a href="https://owensroofs.com" class="highlighted-link">owensroofs.com</a></p>
             </div>
         </div>
         <button id="play-voice" class="voice-button">▶ Hear Mike Speak</button>
         <button class="ar-button" onclick="document.querySelector('model-viewer').activateAR()">📲 AR Mode</button>
-        <div id="caption" class="caption"></div>
+
         <!-- Audio files -->
         <audio id="voice1" src="audio/voice1.mp3"></audio>
         <audio id="voice2" src="audio/voice2.mp3"></audio>
         <audio id="voice3" src="audio/voice3.mp3"></audio>
         <audio id="voice4" src="audio/voice4.mp3"></audio>
         <audio id="voice5" src="audio/voice5.mp3"></audio>
+    </div>
+
+    <!-- Call-to-Action Container -->
+    <div class="cta-container">
+        <p>Interested in getting your own card?</p>
+        <button class="cta-button" onclick="window.location.href='mailto:zakkeasterbrook@gmail.com?subject=Interested in Digital Card&body=Hello, I am interested in getting my own digital card similar to Michael Owens\'s. Please provide more information.'">Get Your Card</button>
     </div>
 
     <script src="script.js"></script>
